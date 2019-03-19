@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Simple Filter Sample</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="page">
+      <section class="section" data-filter-group>
+        <ul class="filters-list">
+          <li>
+            <button class="filter" data-filter="*">All</button>
+          </li>
+          <li>
+            <button class="filter" data-filter="red">Red</button>
+          </li>
+          <li>
+            <button class="filter" data-filter="green">Green</button>
+          </li>
+          <li>
+            <button class="filter" data-filter="orange">Orange</button>
+          </li>
+        </ul>
+        <div class="container">
+          <div class="sample" data-category="green" style="background-color: green;">0</div>
+          <div class="sample" data-category="green" style="background-color: green;">1</div>
+          <div class="sample" data-category="red" style="background-color: red;">2</div>
+          <div class="sample" data-category="green" style="background-color: green;">3</div>
+          <div class="sample" data-category="green" style="background-color: green;">4</div>
+          <div class="sample" data-category="green" style="background-color: green;">5</div>
+          <div class="sample" data-category="green" style="background-color: green;">6</div>
+          <div class="sample" data-category="red" style="background-color: red;">7</div>
+          <div class="sample" data-category="orange" style="background-color: orange;">8</div>
+          <div class="sample" data-category="red" style="background-color: red;">9</div>
+          <div class="sample" data-category="green" style="background-color: green;">10</div>
+          <div class="sample" data-category="red" style="background-color: red;">11</div>
+          <div class="sample" data-category="red" style="background-color: red;">12</div>
+          <div class="sample" data-category="orange" style="background-color: orange;">13</div>
+          <div class="sample" data-category="orange" style="background-color: orange;">14</div>
+          <div class="sample" data-category="green" style="background-color: green;">15</div>
+          <div class="sample" data-category="green" style="background-color: green;">16</div>
+          <div class="sample" data-category="green" style="background-color: green;">17</div>
+          <div class="sample" data-category="green" style="background-color: green;">18</div>
+          <div class="sample" data-category="green" style="background-color: green;">19</div>
+          <div class="sample" data-category="green" style="background-color: green;">20</div>
+          <div class="sample" data-category="green" style="background-color: green;">21</div>
+          <div class="sample" data-category="green" style="background-color: green;">22</div>
+          <div class="sample" data-category="green" style="background-color: green;">23</div>
+          <div class="sample" data-category="red" style="background-color: red;">24</div>
+          <div class="sample" data-category="orange" style="background-color: orange;">25</div>
+          <div class="sample" data-category="orange" style="background-color: orange;">26</div>
+          <div class="sample" data-category="orange" style="background-color: orange;">27</div>
+          <div class="sample" data-category="red" style="background-color: red;">28</div>
+          <div class="sample" data-category="green" style="background-color: green;">29</div>
+          <div class="sample" data-category="orange" style="background-color: orange;">30</div>
+          <div class="sample" data-category="red" style="background-color: red;">31</div>
+          <div class="sample" data-category="green" style="background-color: green;">32</div>
+          <div class="sample" data-category="red" style="background-color: red;">33</div>
+          <div class="sample" data-category="red" style="background-color: red;">34</div>
+          <div class="sample" data-category="green" style="background-color: green;">35</div>
+          <div class="sample" data-category="red" style="background-color: red;">36</div>
+          <div class="sample" data-category="green" style="background-color: green;">37</div>
+          <div class="sample" data-category="green" style="background-color: green;">38</div>
+          <div class="sample" data-category="orange" style="background-color: orange;">39</div>
+          <div class="sample" data-category="green" style="background-color: green;">40</div>
+          <div class="sample" data-category="red" style="background-color: red;">41</div>
+          <div class="sample" data-category="red" style="background-color: red;">42</div>
+          <div class="sample" data-category="red" style="background-color: red;">43</div>
+          <div class="sample" data-category="red" style="background-color: red;">44</div>
+          <div class="sample" data-category="orange" style="background-color: orange;">45</div>
+          <div class="sample" data-category="red" style="background-color: red;">46</div>
+          <div class="sample" data-category="orange" style="background-color: orange;">47</div>
+          <div class="sample" data-category="red" style="background-color: red;">48</div>
+          <div class="sample" data-category="green" style="background-color: green;">49</div>
+          <div class="sample" data-category="orange" style="background-color: orange;">50</div>
+          <div class="sample" data-category="red" style="background-color: red;">51</div>
+          <div class="sample" data-category="green" style="background-color: green;">52</div>
+          <div class="sample" data-category="red" style="background-color: red;">53</div>
+          <div class="sample" data-category="orange" style="background-color: orange;">54</div>
+          <div class="sample" data-category="orange" style="background-color: orange;">55</div>
+          <div class="sample" data-category="green" style="background-color: green;">56</div>
+          <div class="sample" data-category="red" style="background-color: red;">57</div>
+          <div class="sample" data-category="orange" style="background-color: orange;">58</div>
+          <div class="sample" data-category="red" style="background-color: red;">59</div>
+          <div class="sample" data-category="green" style="background-color: green;">60</div>
+          <div class="sample" data-category="green" style="background-color: green;">61</div>
+          <div class="sample" data-category="green" style="background-color: green;">62</div>
+          <div class="sample" data-category="red" style="background-color: red;">63</div>
+          <div class="sample" data-category="green" style="background-color: green;">64</div>
+          <div class="sample" data-category="orange" style="background-color: orange;">65</div>
+          <div class="sample" data-category="green" style="background-color: green;">66</div>
+          <div class="sample" data-category="orange" style="background-color: orange;">67</div>
+          <div class="sample" data-category="green" style="background-color: green;">68</div>
+          <div class="sample" data-category="red" style="background-color: red;">69</div>
+          <div class="sample" data-category="green" style="background-color: green;">70</div>
+          <div class="sample" data-category="green" style="background-color: green;">71</div>
+          <div class="sample" data-category="green" style="background-color: green;">72</div>
+          <div class="sample" data-category="green" style="background-color: green;">73</div>
+          <div class="sample" data-category="red" style="background-color: red;">74</div>
+          <div class="sample" data-category="orange" style="background-color: orange;">75</div>
+          <div class="sample" data-category="green" style="background-color: green;">76</div>
+          <div class="sample" data-category="orange" style="background-color: orange;">77</div>
+          <div class="sample" data-category="orange" style="background-color: orange;">78</div>
+          <div class="sample" data-category="green" style="background-color: green;">79</div>
+          <div class="sample" data-category="orange" style="background-color: orange;">80</div>
+          <div class="sample" data-category="green" style="background-color: green;">81</div>
+          <div class="sample" data-category="orange" style="background-color: orange;">82</div>
+          <div class="sample" data-category="green" style="background-color: green;">83</div>
+          <div class="sample" data-category="green" style="background-color: green;">84</div>
+          <div class="sample" data-category="red" style="background-color: red;">85</div>
+          <div class="sample" data-category="red" style="background-color: red;">86</div>
+          <div class="sample" data-category="red" style="background-color: red;">87</div>
+          <div class="sample" data-category="green" style="background-color: green;">88</div>
+          <div class="sample" data-category="green" style="background-color: green;">89</div>
+          <div class="sample" data-category="green" style="background-color: green;">90</div>
+          <div class="sample" data-category="green" style="background-color: green;">91</div>
+          <div class="sample" data-category="green" style="background-color: green;">92</div>
+          <div class="sample" data-category="green" style="background-color: green;">93</div>
+          <div class="sample" data-category="green" style="background-color: green;">94</div>
+          <div class="sample" data-category="red" style="background-color: red;">95</div>
+          <div class="sample" data-category="orange" style="background-color: orange;">96</div>
+          <div class="sample" data-category="green" style="background-color: green;">97</div>
+          <div class="sample" data-category="green" style="background-color: green;">98</div>
+          <div class="sample" data-category="red" style="background-color: red;">99</div>
+        </div>
+      </section>
+    </div>
+    <script src="core.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

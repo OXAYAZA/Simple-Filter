@@ -1,0 +1,25 @@
+doctype html
+html( lang='en' )
+	head
+		title Simple Filter Sample
+		meta( name='viewport', content='width=device-width, height=device-height, initial-scale=1.0' )
+		meta( http-equiv='X-UA-Compatible' content='IE=Edge' )
+		meta( charset='utf-8' )
+		link( rel='stylesheet', href='style.css' )
+
+	body
+		.page
+			section.section( data-filter-group )
+				ul.filters-list
+					li: button.filter( data-filter='*' ) All
+					li: button.filter( data-filter='red' ) Red
+					li: button.filter( data-filter='green' ) Green
+					li: button.filter( data-filter='orange' ) Orange
+				.container
+					- var categories = [ 'red', 'green', 'orange' ];
+					- for ( var i = 0; i < 100; i++ )
+						- var category = categories[ Math.round( Math.random() * 2 ) ];
+						.sample( data-category= category, style=`background-color: ${category};` )= i
+
+		script( src='core.js' )
+		script( src='script.js' )
