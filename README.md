@@ -28,5 +28,5 @@ simpleFilter( document.querySelector( 'section' ) );
 
 ## License
 
-Licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+Licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)  
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-sa/4.0/)
