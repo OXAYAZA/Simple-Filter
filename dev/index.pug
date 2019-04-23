@@ -21,5 +21,6 @@ html( lang='en' )
 						- var category = categories[ Math.round( Math.random() * 2 ) ];
 						.sample( data-category= category, style=`background-color: ${category};` )= i
 
+		script( src='polyfills.min.js' )
 		script( src='core.js' )
 		script( src='script.js' )

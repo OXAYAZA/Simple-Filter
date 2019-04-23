@@ -6,8 +6,8 @@ var plugins = {
 
 document.addEventListener( 'DOMContentLoaded', function () {
 	if ( plugins.filterGroups ) {
-		plugins.filterGroups.forEach( function( node ) {
-			simpleFilter( node );
-		});
+		for ( let i = 0; i < plugins.filterGroups.length; i++ ) {
+			simpleFilter( plugins.filterGroups[ i ] );
+		}
 	}
 });

@@ -34,16 +34,16 @@ function simpleFilter ( node ) {
 	};
 
 	Filter.prototype.clickHandler = function () {
-		this.filterGroup.filters.forEach( function ( filter ) {
-			filter.classList.remove( 'active' );
-		});
+		for ( let i = 0; i < this.filterGroup.filters.length; i++ ) {
+			this.filterGroup.filters[ i ].classList.remove( 'active' );
+		}
 
 		this.filterGroup.filter( this.getAttribute( 'data-filter' ) );
 		this.classList.add( 'active' );
 	};
 
 	Filter.prototype.filter = function ( filterName ) {
-		var event = new Event( 'filter' );
+		var event = new CustomEvent( 'filter' );
 		event.filterName = filterName;
 		this.current = filterName;
 		this.node.dispatchEvent( event );
